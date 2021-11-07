@@ -11,10 +11,17 @@ tải github desktop và cài đặt
  ![](https://i.imgur.com/ekmsNBZ.png)
  
 **chọn mục để nó download về**
- ![](https://i.imgur.com/XZqQNzh.png)
+
+
+  <img src="https://i.imgur.com/XZqQNzh.png" align="center" />
+  
+    
+
+
  
 **rồi nó sẽ tải về như thế này anh em cứ thay đổi code trong đó** 
-![](https://i.imgur.com/ypRMXKj.png)
+ <img src="https://i.imgur.com/ypRMXKj.png" align="center" />
+
 
 
 
