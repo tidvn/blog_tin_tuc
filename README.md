@@ -2,7 +2,7 @@
 
 
 
-**tải github desktop và cài đặt **
+tải github desktop và cài đặt 
 
 
 
