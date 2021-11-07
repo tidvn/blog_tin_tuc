@@ -16,7 +16,7 @@ tải github desktop và cài đặt
 ** rồi nó sẽ tải về như thế này, anh em cứ thay đổi code trong đó** ![](https://i.imgur.com/ypRMXKj.png)
 
 
-``
+
 ## mỗi buổi làm xong thì cần update lên cái project
 
 **Bật lại cái github desktop**
