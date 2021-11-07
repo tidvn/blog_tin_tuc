@@ -12,15 +12,16 @@ tải github desktop và cài đặt
  
 **chọn mục để nó download về**
 
-
+<p align="center">
   <img src="https://i.imgur.com/XZqQNzh.png" align="center" />
-  
-    
+ </p>
 
 
  
 **rồi nó sẽ tải về như thế này anh em cứ thay đổi code trong đó** 
+<p align="center">
  <img src="https://i.imgur.com/ypRMXKj.png" align="center" />
+ </p>
 
 
 
