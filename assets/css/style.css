@@ -1,0 +1,283 @@
+
+/*!
+ Phung Tien Dung
+ */
+:root {
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: Rubik, sans-serif;
+    --bs-body-font-size: 0.9375rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #595d69;
+    --bs-body-bg: #fff;
+}
+
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+
+}
+ /* top menu */
+.nav-link {
+    display: block;
+    padding: 0.25rem 0.75 rem;
+    color: #595d69;
+}
+
+
+.navbar-nav .nav-link {
+	font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize; /* tu dong viet hoa dau dong moi tu */
+    line-height: 100px;
+}
+ .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+
+/*show,hide search */
+.nav-search .dropdown-menu {
+    top: 120%;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    left: auto;
+    right: 0;
+}
+.nav-search .dropdown-menu.show {
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+@media (max-width: 575.98px) {
+    .nav-search .dropdown-menu {
+        width: 100%;
+    }
+}
+
+.card,
+.overflow-hidden {
+    will-change: transform;
+}
+
+.card .card-element-hover {
+    visibility: hidden;
+    margin-top: 30px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+}
+
+.card:hover .card-element-hover {
+    visibility: visible;
+    margin-top: 0px;
+    opacity: 1;
+}
+
+.card.card-overlay-bottom {
+    overflow: hidden;
+}
+
+.card.card-overlay-bottom:before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+    background-image: linear-gradient(180deg, transparent, black);
+    z-index: 1;
+}
+
+.card .card-img-overlay {
+    z-index: 2;
+}
+
+.card.card-overlay-top {
+    overflow: hidden;
+}
+
+.card.card-overlay-top:before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(black));
+    background-image: linear-gradient(0deg, transparent, black);
+}
+
+.card-img-scale .card-img {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.card-img-scale:hover .card-img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.card-bg-scale {
+    z-index: 99;
+}
+
+.card-bg-scale::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    -webkit-transition: all 1s !important;
+    transition: all 1s !important;
+    z-index: -2;
+}
+
+.card-bg-scale:hover::after {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 1s !important;
+    transition: all 1s !important;
+}
+
+.card-featured {
+    position: absolute;
+    z-index: 99;
+    background: #2163e8;
+    color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    top: -8px;
+    right: -48px;
+    width: 120px;
+    padding: 16px 0 3px 0;
+}
+
+.card-img-flash {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-flash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: -80%;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.card-img-flash:hover::before {
+    -webkit-animation: imgflash 1s;
+    animation: imgflash 1s;
+}
+
+@-webkit-keyframes imgflash {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes imgflash {
+    100% {
+        left: 125%;
+    }
+}
+
+.card-grid .card-grid-lg {
+    height: 560px;
+}
+
+.card-grid .card-grid-sm {
+    height: calc(280px - calc(var(--bs-gutter-y) / 2));
+}
+
+@media (max-width: 767.98px) {
+    .card-grid .card-grid-lg {
+        height: 400px;
+    }
+}
+
+.card-fold {
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.card-fold:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(-45deg, #fff 45%, #fff 45%, #d0d4d9 50%, #fff 70%);
+    -webkit-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 0.7rem 0px 0px 0px;
+}
+
+.card:hover .card-fold:after,
+.card:focus .card-fold:after,
+.card:active .card-fold:after,
+.card:hover.card-fold:after,
+.card:focus.card-fold:after,
+.card:active.card-fold:after {
+    width: 40px;
+    height: 40px;
+}
+
+
+/*!
+ Nhat Minh
+ */
+
+
+ 
+/*!
+ Dinh Phuc
+ */
+
+
+ 
+/*!
+Anh Vu
+*/
+
+
+
+/*!
+ Thanh Trung
+ */
