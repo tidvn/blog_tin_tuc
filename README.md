@@ -13,7 +13,8 @@ tải github desktop và cài đặt
 **chọn mục để nó download về**
  ![](https://i.imgur.com/XZqQNzh.png)
  
-** rồi nó sẽ tải về như thế này, anh em cứ thay đổi code trong đó** ![](https://i.imgur.com/ypRMXKj.png)
+** rồi nó sẽ tải về như thế này anh em cứ thay đổi code trong đó ** 
+![](https://i.imgur.com/ypRMXKj.png)
 
 
 
