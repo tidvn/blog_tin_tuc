@@ -263,7 +263,70 @@
 /*!
  Nhat Minh
  */
-
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+  width: 100px;
+  height: 120px;
+  border-radius: 5px;
+}
+.a{
+    position: absolute;
+    left: 70%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+}
+.a>span{
+    font-size: 120px;
+}
+.fab:hover {
+    opacity: 0.8;
+}
+.fa-youtube{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+}
+.fa-instagram{
+    background: radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+    width: 100px;
+    height: 120px;
+    border-radius: 5px; 
+}
+p{
+    margin-top:50px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Sans-serif;
+    font-weight: bold;
+}
+div.travel{
+    width: 320px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+.travel>a{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin: 0 auto; 
+    display: inline-block;
+}
 
  
 /*!
