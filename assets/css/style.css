@@ -335,6 +335,9 @@ div.trending{
     color: #333333;
     font-weight: bold;
 }
+div>a{
+    text-decoration: none;
+}
 
  
 /*!
