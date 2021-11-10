@@ -285,8 +285,9 @@
     text-decoration: none;
     padding: 20px;
 }
-.a>span{
-    font-size: 120px;
+span{
+    text-align: center;
+    font-size: 18px;
 }
 .fab:hover {
     opacity: 0.8;
@@ -312,7 +313,7 @@ p{
     font-family: Sans-serif;
     font-weight: bold;
 }
-div.travel{
+div.trending{
     width: 320px;
     height: 60px;
     box-sizing: border-box;
@@ -320,12 +321,19 @@ div.travel{
     border-radius: 5px;
     margin-bottom: 20px; 
 }
-.travel>a{
+.trending>a{
     text-align: center;
     font-size: 24px;
     color: white;
     margin: 0 auto; 
     display: inline-block;
+}
+.b{
+    display: inline-block;
+    padding-left: 22%;
+    font-size: 20px;
+    color: #333333;
+    font-weight: bold;
 }
 
  
