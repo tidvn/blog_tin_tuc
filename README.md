@@ -1,6 +1,6 @@
 # cách sử dụng github
 
-#[blog.tiendung.tech](https://blog.tiendung.tech/ "blog.tiendung.tech")
+#link:[blog.tiendung.tech](https://blog.tiendung.tech/ "blog.tiendung.tech")
 
 tải github desktop và cài đặt 
 
