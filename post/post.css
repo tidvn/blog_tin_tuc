@@ -11,7 +11,7 @@ html{
 
 main{
     width: 85%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 /* ------------------- header ------------------ */
 .background-container{
@@ -25,13 +25,13 @@ main{
 .background-container .background{
     width: 100%;
     height: 40rem;
-    background-image: url('assets/images/blog/4by3/background-image.jpg');
+    background-image: url('../assets/images/blog/4by3/background-image.jpg');
     background-position: center;
     transition: .7s;
 }
 
 .background:hover{
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 .overlay{
@@ -98,7 +98,7 @@ main{
     width: 100%;
     border-radius: 50%;
     margin-bottom: 1rem;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .5);
+    box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .5);
 
 }
 
@@ -279,6 +279,26 @@ main{
     color: black;
 }
 
+        /* form validation */
+.null,
+.retype{
+    color:red;
+}
+
+.hidden{
+    display: none;
+}
+
+/* loi khi nhap form */
+.error{
+    color: #fff;
+    border: 1px solid rgba(255, 0, 0, 0.7);
+}
+
+.form-placeholder-css::placeholder{
+    color: white;
+}
+
 /* ---------- responsive -------------*/
 @media screen and (max-width:992px){
     .post-infor{
@@ -287,6 +307,10 @@ main{
     
     .post-infor p{
         display: inline;
+    }
+
+    .img-container{
+        width: 30%;
     }
 
     .icon-container a{
@@ -304,6 +328,10 @@ main{
         display: inline-flex;
     }
 
+    .img-container{
+        width: 20%;
+    }
+
     .post-infor{
         border: none;
     }
@@ -312,13 +340,11 @@ main{
         display: inline;
     }
 
-
     .comment .comment-img{
         width: 20%;
     }
     
 }
-
 
 @media screen and (max-width:576px){
     .comment .comment-img{
@@ -328,5 +354,122 @@ main{
     .post-infor{
         border: none;
     }
+
+    .img-container{
+        width: 40%;
+    }
+}
+
+
+
+/* footer */
+footer{
+    margin-top: 50px;
+    font-size: 1.6rem;
+}
+
+.container{
+    padding: 0;
+    margin-top: 50px;
+}
+
+.col-md-4{
+    display: flex;
+    justify-content: center;
+
+}
+footer{
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(33, 34, 36);
+    color:white;
     
+}
+.ft{
+    padding-top: 20px;
+}
+/*footer1*/
+
+.imgfooter{
+    width: 100%;
+    height: 100px;
+}
+.enteremail{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-control{
+    font-size: 1.6rem;
+}
+
+.subcribe{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.dieuluat{
+    color: gray;
+}
+
+.dieuluat a {
+    
+    color:grey;
+}
+.buttonsubmit{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 7px 20px;
+    background-color: red;
+    color: white;
+}
+.buttonsubmit:hover{
+    background-color: rgb(201, 0, 0);
+    border-color: red;
+}
+::placeholder{
+    color: gray;
+}
+.ft13{
+    padding-bottom: 10px;
+}
+/*footer2*/
+footer h2{
+    color: #FAA31B;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+.nav{
+    padding-left: 100px;
+}
+.selectnav{
+    padding-left: 0rem;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+ul li a i{
+    padding-right: 5px;
+}
+.insta:hover{
+    color:  rgba(255, 0, 43, 0.582);
+}
+.gmail:hover{
+    color: rgba(0, 151, 76, 0.616);
+}
+.imgapp{
+    width: 106px;
+    height: 33px;
+}
+
+.bug{
+    padding: 0 !important;
 }

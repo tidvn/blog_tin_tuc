@@ -9,7 +9,7 @@
 
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="post.css">
     <title>Blog</title>
 </head>
 
@@ -31,11 +31,11 @@
             <div class="row">
 
                 <!------ author ------>
-                <div class="author col-lg-2 col-md-6 col-sm-4">
+                <div class="author col-lg-2">
                     <div class="author-desc">
                         <div class="author-infor">
                             <div class="img-container">
-                                <img src="assets/images/avatar/avatar.jpg" alt="#">
+                                <img src="../assets/images/avatar/avatar.jpg" alt="#">
                                 <a href="#">Trần Đình Phúc</a>
                                 <p>Student</p>
                             </div>
@@ -101,12 +101,12 @@
                             <div class="comment">
                                 <div class="row">
                                     <div class="comment-img col-lg-2 col-md-2 col-sm-2">
-                                        <img src="assets/images/avatar/avatar.jpg" alt="#">
+                                        <img src="../assets/images/avatar/avatar.jpg" alt="#">
                                     </div>
 
                                     <div class="comment-text col-lg-10 col-md-10 col-sm-10">
                                         <div class="comment-text-header">
-                                            <p>Trần Đình Phúc</p>
+                                            <p>User1</p>
                                             <p>31/10/2020 <a href="#" class="reply">Reply</a>
                                             </p>
                                         </div>
@@ -124,12 +124,12 @@
                             <div class="comment">
                                 <div class="row">
                                     <div class="comment-img col-lg-2 col-md-2 col-sm-2">
-                                        <img src="assets/images/avatar/avatar.jpg" alt="#">
+                                        <img src="../assets/images/avatar/avatar.jpg" alt="#">
                                     </div>
 
                                     <div class="comment-text col-lg-9 col-md-10 col-sm-10">
                                         <div class="comment-text-header">
-                                            <p>Trần Đình Phúc</p>
+                                            <p>User2</p>
                                             <p>31/10/2020 <a href="#" class="reply">Reply</a>
                                             </p>
                                         </div>
@@ -148,12 +148,12 @@
                             <div class="comment">
                                 <div class="row">
                                     <div class="comment-img col-lg-2 col-md-2 col-sm-2">
-                                        <img src="assets/images/avatar/avatar.jpg" alt="#">
+                                        <img src="../assets/images/avatar/avatar.jpg" alt="#">
                                     </div>
 
                                     <div class="comment-text col-lg-9 col-md-10 col-sm-10">
                                         <div class="comment-text-header">
-                                            <p>Trần Đình Phúc</p>
+                                            <p>User3</p>
                                             <p>31/10/2020 <a href="#" class="reply">Reply</a>
                                             </p>
                                         </div>
@@ -170,29 +170,42 @@
 
                         <!----------- form ----------->
                         <div class="form-container">
-                            <h2>Leave a reply</h2>
+                            <h1>Leave a reply</h1>
 
-                            <p>Your email address will not be published. Required fields are marked *</p>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Name" class="form-css form-respon">
+                            <p>Your email address will not be published.</p>
+
+                            <form action="" name="frm">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label for="name"></label>
+                                        <input type="text" name="name" placeholder="Name"
+                                            class="form-css form-respon form-name" onfocus="focusFunc1()">
+                                        <span class="name-null null hidden">Vui lòng nhập tên</span>
+                                        <span class="name-retype retype hidden">Tên không hợp lệ</span>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <label for="email"></label>
+                                        <input type="email" placeholder="Email" name="email"
+                                            class="form-css form-respon form-email" onfocus="focusFunc2()">
+                                        <span class="email-null null hidden">Vui lòng nhập email</span>
+                                        <span class="email-retype retype hidden">Email không hợp lệ</span>
+                                    </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <input type="email" placeholder="Email" class="form-css form-respon">
-
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <label for="message"></label>
+                                        <input type="text" name="message" placeholder="Message"
+                                            class="form-css form-mess" onfocus="focusFunc3()">
+                                        <span class="message-null null hidden">Vui lòng nhập mục này</span>
+                                        <span class="message-retype retype hidden"></span>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <label for="type-comment"></label>
-                                    <input type="text" placeholder="Message" class="form-css message">
-                                </div>
-                            </div>
+                            </form>
 
                             <div>
-                                <button class="btn">Send</button>
+                                <button class="btn" onclick="validForm(document.forms.frm);">Send</button>
                             </div>
                         </div>
                     </div>
@@ -237,6 +250,119 @@
         </section>
 
     </main>
+
+
+
+    <!------------------------- footer ------------------------->
+    <footer>
+        <div class="container">
+            <div class="ft1 ft">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 col-sm-12">
+                        <img class="imgfooter" src="./image/logofooter.png" alt="loading photo">
+                    </div>
+                    <div class="col-md-4 col-lg-5 col-sm-12">
+                        <p>The next-generation blog, news, and magazine theme for you to start sharing your stories
+                            today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12 ">
+                        <form action="">
+                            <div class="enteremail ft13 subcribe ">
+                                <input type="email" class="form-control" placeholder="Nhập địa chỉ email của bạn">
+                            </div>
+                            <div class="subcribe ft13">
+                                <button class="buttonsubmit" type="submit">Đăng ký</button>
+                            </div>
+                            <div class="dieuluat ft13">
+                                By subscribing you agree to our
+                                <a href="#">Privacy Policy</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="ft2 ft">
+                <div class="row">
+                    <div class="recent col-lg-3 col-md-6 col-sm-12">
+                        <h2>Bài đăng gần đây</h2>
+                    </div>
+                    <div class="ft22  col-lg-3 col-md-6 col-sm-6">
+                        <div class="row">
+                            <h2>Các mục chọn</h2>
+
+                            <div class="item row">
+
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <ul class="select">
+                                        <li class="item"><a href="#">Đặc trưng</a></li>
+                                        <li class="item"><a href="#">Hỗ trợ</a></li>
+                                        <li class="item"><a href="#">Tin tức</a></li>
+                                        <li class="item"><a href="#">Bản tin</a></li>
+                                        <li class="item"><a href="#">Khởi nghiệp</a></li>
+                                        <li class="item"><a href="#">Công nghệ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <ul class="select">
+                                        <li class="item"><a href="#">Cảm hứng</a></li>
+                                        <li class="item"><a href="#">Công việc</a></li>
+                                        <li class="item"><a href="#">Liên hệ </a></li>
+                                        <li class="item"><a href="#">Chủ đề</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="contact col-lg-3 col-md-6 col-sm-6">
+                        <div class="row">
+                            <h2>Cập nhật thông tin</h2>
+
+                            <div>
+                                <ul class="select">
+                                    <li class="item"><a href="#"><i class='bx bxl-facebook-circle'></i>Facebook</a>
+                                    </li>
+                                    <li class="item"><a class="insta" href="#"><i
+                                                class='bx bxl-instagram '></i>Instagram</a></li>
+                                    <li class="item"><a class="gmail" href="#"><i class='bx bx-mail-send'></i>Gmail</a>
+                                    </li>
+                                    <li class="item"><a href="#"><i class='bx bx-conversation'></i>Zalo</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="download col-lg-3 col-md-6 col-sm-12">
+                        <div class="row">
+                            <div>
+                                <h2>Ứng dụng điện thoại</h2>
+                            </div>
+                            <div>
+                                <p>Tải xuống ứng dụng và nhận các Cảnh báo Tin tức Mới nhất và các tiêu đề mới nhất và
+                                    các
+                                    bài báo hàng ngày gần bạn.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><a href=""><img class="imgapp"
+                                            src="../assets/images/download/appStore.png" alt=""></a>
+                                </div>
+                                <div class="col-md-6"><a href=""><img class="imgapp"
+                                            src="../assets/images/download/CHplay.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="post.js"></script>
 </body>
 
 </html>
