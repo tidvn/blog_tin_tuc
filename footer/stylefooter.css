@@ -1,0 +1,102 @@
+footer .col-md-4{
+    display: flex;
+    justify-content: center;
+
+}
+footer{
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(33, 34, 36);
+    color:white;
+    
+}
+.ft{
+    padding-top: 20px;
+}
+/*footer1*/
+
+.imgfooter{
+    width: 198px;
+    height: 49px;
+}
+.enteremail{
+    width:auto ;
+    text-align: center;
+}
+.subcribe{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.dieuluat{
+    color: gray;
+}
+
+.dieuluat a {
+    
+    color:grey;
+}
+.buttonsubmit{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 7px 20px;
+    background-color: red;
+    color: white;
+}
+.buttonsubmit:hover{
+    background-color: rgb(201, 0, 0);
+    border-color: red;
+}
+::placeholder{
+    color: gray;
+}
+.ft13{
+    padding-bottom: 10px;
+}
+/*footer2*/
+footer h5{
+    color: #FAA31B;
+}
+footer ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+footer .nav{
+    padding-left: 100px;
+}
+.selectnav{
+    padding-left: 0rem;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+footer ul li a i{
+    padding-right: 5px;
+}
+.insta:hover{
+    color:  rgba(255, 0, 43, 0.582);
+}
+.gmail:hover{
+    color: rgba(0, 151, 76, 0.616);
+}
+.imgapp{
+    width: 120px;
+    height: 35px;
+}
+.ft221{
+    display: inlinex;
+}
+.ft22{
+    display: inlinex;
+}
+footer .col-6{
+    width: 50%;
+}
+.final-ft{
+    text-align: center;
+    padding-top: 40px;
+    text-decoration: underline;
+}
