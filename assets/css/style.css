@@ -431,10 +431,94 @@ a {
 }
 
 
+
+/* social button */
+.bg-facebook {
+    background-color: #5d82d1;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.bg-facebook:hover {
+    background-color: #5475bc;
+    color: #fff;
+}
+
+.bg-instagram-gradient {
+    background: radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #fff;
+    background-size: 120% 120%;
+    background-position: right bottom;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+    text-decoration: none;
+}
+
+.bg-instagram-gradient:hover {
+    background: radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 20% 130%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #fff;
+    background-size: 100% 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-position: left bottom;
+}
+
+.bg-youtube {
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bg-youtube:hover {
+    background-color: #e60000;
+    color: #fff;
+}
+
+
+/* mini img post  */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* lbutton */
+.btn-primary-soft {
+    color: #2163e8;
+    background-color: rgba(33, 99, 232, 0.1);
+}
+
+.btn-primary-soft:hover {
+    color: #fff;
+    background-color: #2163e8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*!
  Nhat Minh
  */
-.fab {
+/* .fab {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -510,8 +594,13 @@ div>a{
     text-decoration: none;
 }
 
- 
+  */
 /*!
+
+
+
+
+
  Dinh Phuc
  */
 
@@ -521,10 +610,7 @@ div>a{
     margin: 0;
 }
 
-html{
-    font-size: 62.5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 main{
     width: 85%;
