@@ -418,7 +418,19 @@ a {
 .card-grid .card-grid-sm {
     height: calc(280px - calc(var(--bs-gutter-y) / 2));
 }
-
+.card-featured {
+    position: absolute;
+    z-index: 99;
+    background: #2163e8;
+    color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    top: -8px;
+    right: -48px;
+    width: 120px;
+    padding: 16px 0 3px 0;
+}
 @media (max-width: 767.98px) {
     .card-grid .card-grid-lg {
         height: 400px;
