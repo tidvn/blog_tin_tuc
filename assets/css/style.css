@@ -457,7 +457,7 @@ footer .col-6{
     width: 100%;
     font-size: 1rem;
     position: sticky;
-    top: 2rem;
+    top: 7rem;
     left: 0;
     right: 0;
 }
@@ -598,7 +598,7 @@ footer .col-6{
         /* ---------- sticky ----------*/
 .side-bar-sticky{
     position: sticky;
-    top: 2rem;
+    top: 7rem;
     left: 0;
     right: 0;
 } 
