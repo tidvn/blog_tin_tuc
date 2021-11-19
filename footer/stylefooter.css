@@ -1,4 +1,4 @@
-footer .col-md-4{
+.col-md-4{
     display: flex;
     justify-content: center;
 
@@ -55,46 +55,61 @@ footer{
     padding-bottom: 10px;
 }
 /*footer2*/
-footer h5{
+.ft h5{
     color: #FAA31B;
 }
-footer ul li {
+.about p {
+    line-height: 35px;
+}
+ul li {
     list-style: none;
     margin-top: 10px;
 }
-footer .nav{
-    padding-left: 100px;
-}
+
 .selectnav{
     padding-left: 0rem;
 }
-footer ul li a{
+ul li a{
     text-decoration: none;
     font-size: 18px;
     color: white;
 }
-footer ul li a i{
+ul li a i{
     padding-right: 5px;
 }
 .insta:hover{
-    color:  rgba(255, 0, 43, 0.582);
+    color: rgb(156, 20, 20);
 }
-.gmail:hover{
-    color: rgba(0, 151, 76, 0.616);
+.twitter:hover{
+    color: rgb(53, 53, 189);
 }
 .imgapp{
     width: 120px;
     height: 35px;
 }
-.ft221{
-    display: inlinex;
-}
-.ft22{
-    display: inlinex;
-}
-footer .col-6{
+
+.col-6{
     width: 50%;
 }
+/*HOT topics Footer*/
+.hot-topics{
+    margin-top: 15px;
+}
+.hot-topics ul{
+    padding-left: 0px;
+}
+.hot-topics ul li {
+    display: inline-block;
+    padding: 5px 10px;
+
+}
+.hot-topics ul li a:hover{
+    text-decoration: underline;
+    color: black;
+
+}
+/*Final footer*/ 
+
 .final-ft{
     text-align: center;
     padding-top: 40px;
