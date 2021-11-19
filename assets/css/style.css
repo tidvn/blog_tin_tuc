@@ -67,15 +67,7 @@
 .divider {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
-/* logo respon */
 
-.logo-area {
-    height: 170px;
-    
-}
-@media only screen and (max-width: 767px) {
-    .logo-area {
-      height: 100px; } }
 
 /* main nav */
 
@@ -348,8 +340,7 @@ footer{
 /*footer1*/
 
 .imgfooter{
-    width: 198px;
-    height: 49px;
+    height: 100px;
 }
 .enteremail{
     width:auto ;
