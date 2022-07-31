@@ -1,3 +1,3 @@
 
-#link:[blog.tiendung.tech](https://blog.tiendung.tech/ "blog.tiendung.tech")
+#https://tidvn.tech/blog_tin_tuc/
 
